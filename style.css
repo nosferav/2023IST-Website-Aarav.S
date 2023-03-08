@@ -1,3 +1,7 @@
+BODY {
+	font-family: 'Shantell Sans', cursive;
+	}
+
 DIV {
 	border: 1px solid #000000 ;
 	}
@@ -35,4 +39,3 @@ DIV {
 	height:50px;
 	border: 1px solid red;
 	}
-	
