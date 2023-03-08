@@ -30,14 +30,20 @@ DIV {
 	}
 #FooterLeft {
 	float:left;
-	width:399px;
+	width:0.5vw;
 	height:50px;
 	border: 1px solid green;
 	}
 
 #FooterRight {
 	float:right;
-	width:399px;
+	width:0.5vw;
 	height:50px;
 	border: 1px solid red;
 	}
+	
+@media only screen and (max-wdith:99px) {
+	#footer, #MainContent, #Header {
+		width:100%;
+	}
+}
