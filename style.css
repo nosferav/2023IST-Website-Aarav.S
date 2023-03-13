@@ -42,7 +42,7 @@ DIV {
 	border: 1px solid red;
 }
 	
-@media only screen and (max-wdith:99px) {
+@media only screen and (max-width:99px) {
 	#footer, #MainContent, #Header {
 		width:100%;
 	}
