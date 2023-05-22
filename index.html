@@ -23,6 +23,18 @@
     height: 100%;
     object-fit: cover;
 	}
+		.mainContainer{
+		  decoration: BoxDecoration{
+			border: Border.all{
+			  color: Colors.red[500],
+			},
+			BorderRadius.circular(20}
+		  },
+		}
+.bodyimg {
+  width: 40%;
+  height: 40%;
+}
   </style>
   
   
@@ -42,18 +54,26 @@
 	<div class="col-5">
 		body
 	<!-- SEARCH STARTS HERE -->
-	<div class="container-fluid">
-            <div class="row height d-flex justify-content-center align-items-center">
-              <div class="col-md-6">
-                <div class="form">
-                  <i class="fa fa-search"></i>
-                  <input type="text" class="form-control form-input" placeholder="Search anything...">
-                  <span class="left-pan"><i class="fa fa-microphone"></i></span>
-                </div>
-              </div>
-            </div>
-          </div>
+		<div class="container-fluid">
+				<div class="row height d-flex justify-content-center align-items-center">
+				  <div class="col-md-6">
+					<div class="form">
+					  <i class="fa fa-search"></i>
+					  <input type="text" class="form-control form-input" placeholder="Search anything...">
+					  <span class="left-pan"><i class="fa fa-microphone"></i></span>
+					</div>
+				  </div>
+				</div>
+			  </div>
 	<!-- SEARCH ENDS HERE -->
+	<!-- CONTENT STARTS HERE -->
+<div class="mainContainer">
+		<!-- CONIMG1 -->
+	<div class="bodyimg">
+		<img src="images/pandasmile.png">
+	</div>
+</div>
+	<!-- CONTENT ENDS HERE -->
 	</div>
 	<div class="col-sm">
 		right col
