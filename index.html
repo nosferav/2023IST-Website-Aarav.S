@@ -34,39 +34,107 @@ container {border:1px solid red;}
 	bottom-three {
 		margin-bottom: 3cm;
 	}
+
+	@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
 </style>
 <script>
 	if window.size<50px then
 	div_class_name.visibiity=false
 	else
 	div_class_name.visibiity=true
-
 </script>
   
   
 <!-- BANNER STARTS HERE -->
 	<div class="container-fit">
-		<IMG class="img-fluid" style="height:100%; width: fit-content; object-fit: cover;" src="images\banner.png" />
+		<img class="img-fluid" style="height:100%; width: fit-content; object-fit: cover;" src="images\banner.png" />
 	</div>	
 <!-- BANNER ENDS HERE -->
-  
+<!-- nav starts-->
+<nav class="navbar bg-body-tertiary fixed-top" style="opacity: 40%; color:black; clear:both;>
+	<div class="container-fluid">
+	  <a class="navbar-brand" href="#">Offcanvas navbar</a>
+	  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+		<div class="offcanvas-header">
+		  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+		  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body">
+		  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+			<li class="nav-item">
+			  <a class="nav-link active" aria-current="page" href="#">Home</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Link</a>
+			</li>
+			<li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Dropdown
+			  </a>
+			  <ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="#">Action</a></li>
+				<li><a class="dropdown-item" href="#">Another action</a></li>
+				<li>
+				  <hr class="dropdown-divider">
+				</li>
+				<li><a class="dropdown-item" href="#">Something else here</a></li>
+			  </ul>
+			</li>
+		  </ul>
+		  <form class="d-flex mt-3" role="search">
+			<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-success" type="submit">Search</button>
+		  </form>
+		</div>
+	  </div>
+	</div>
+  </nav>
+  <!-- nav ends-->
 <!-- BODY STARTS HERE -->
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-sm-3">        
-		left col
-		<button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive" style="background-color:transparent; border:0px; width:100px; height:50px; position: sticky;" >
-		<img style="width:100%; height:100%;" src="images/panda logo no text.png">
-		</button>
-
-				<div class="offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
-		<div class="offcanvas-header">
-			<h5 class="offcanvas-title"	 id="offcanvasResponsiveLabel">Responsive offcanvas</h5>
-			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
-		</div>
-		<div class="offcanvas-body">
-		</div>
-		</div>
+		<!--button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive" style="background-color:transparent; border:1px; width: fit-content; height:auto; position: sticky; float: left;" >
+		<!img style="width:100%; height:100%;" src="images/panda logo no text.png">
+		</button-->
 			</div>
 			<div class="col-5">
 		body
@@ -85,7 +153,7 @@ container {border:1px solid red;}
 			<div class="mainContainer">
 				<h1> Welcome! <h1>
 				<!-- CONIMG1 START -->
-				<img style="margin-top:2cm" src="images/pandasmile.png" class="img-fluid" >
+				<img style="margin-top:2cm" src="images/pandasmile.png" class="img-fluid" />
 				<!-- CONIMG1 END-->
 				
 			
@@ -97,7 +165,7 @@ container {border:1px solid red;}
 		<!-- SHARE CARD STARTS HERE -->
 		<div class="col-sm-6 mb-3">
 			<div class="card" style="min-width: 12rem; object-fit: contain;">
-				<img src="images/share_smilepanda.png" class="card-img-top">
+				<img src="images/share_smilepanda.png" class="card-img-top" />
 				<div class="card-body">
 			<p class="card-text">Please feel free to share this cause!</p>
 			<button onclick="myFunction()">Link!</button>
@@ -110,7 +178,7 @@ container {border:1px solid red;}
 		<!-- DONATE CARD STARTS HERE -->
 		<div class="col-sm-6 mb-3">
 			<div class="card" style="min-width: 12rem; object-fit: contain;">
-		  <img src="images/donate_beggingpanda.png" class="card-img-top" alt="...">
+		  <img src="images/donate_beggingpanda.png" class="card-img-top" alt="..." />
 			<div class="card-body">		
 			<p class="card-text">Please support this cause!</p>
 			<button onclick="myFunction()">Donate!</button>
