@@ -1,31 +1,9 @@
-@media screen and (max-width:800px) {
-	
-	.left,
-	.right {
-		width: 100%;
-		height: 50%;
-		/* The width is 100%, when the viewport is 800px or smaller */
-	}
 
-	.split {
-	   position: relative;
-	}
-	
-	body {
-	  height: 100vh;
-	}
-}
-div.sticky {
-	position: -webkit-sticky; /* Safari */
-	position: sticky;
-	top: 0;
-  }
-  body {margin: 0;} 
 .card {
 	min-width: 12rem;
 	object-fit: contain;
 }
 img {
-	width: 50% ;
-	height: 50%;
+	width: 100% ;
+	height: fit-content;
 }
