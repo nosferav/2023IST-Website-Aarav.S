@@ -50,11 +50,11 @@ container {border:1px solid red;}
 <!-- nav starts-->
 
 
-  <nav class="navbar sticky-top bg-dark">
+  <nav class="navbar sticky-top bg-dark" style="height:70px">
 	<div class="container-fluid">
-	  <a class="navbar-brand" href="about:blank">Sticky top</a>
-			<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart" aria-controls="offcanvasStart" style="float:left">Toggle top offcanvas</button>
-
+			<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart" aria-controls="offcanvasStart" style="background-color:transparent; border:1px; width: fit-content; height:auto; position: sticky; float: left; ">
+			<img style="width:100%; height:50px;" src="images/panda logo no text.png">
+		</button>
 		<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasStart" aria-labelledby="offcanvasStartLabel">
 		<div class="offcanvas-header">
 			<h5 class="offcanvas-title" id="offcanvasStartLabel">Offcanvas top</h5>
@@ -91,17 +91,16 @@ container {border:1px solid red;}
 			<!-- CONTENT ENDS HERE -->
 			</div>
 		<div class="col-sm">
-		right col
 		<!-- SHARE CARD STARTS HERE -->
-		<div class="col-sm-6 mb-3">
-			<div class="card" style="min-width: 12rem; object-fit: contain;">
+		<div class="col-sm-6 mb-3 ">
+			<div class="card " style="min-width: 12rem; object-fit: contain; margin-top: 1rem">
 				<img src="images/share_smilepanda.png" class="card-img-top" />
 				<div class="card-body">
 			<p class="card-text">Please feel free to share this cause!</p>
 			<button onclick="myFunction()">Link!</button>
 				</div>
 		  </div>
-		</div>
+		  </div>
 		<!-- SHARE CARD ENDS HERE -->
 	
 	

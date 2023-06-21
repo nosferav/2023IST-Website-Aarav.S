@@ -1,5 +1,7 @@
-
-.card {
+h1 {
+	text-align: center;
+  }
+card {
 	min-width: 12rem;
 	object-fit: contain;
 }
