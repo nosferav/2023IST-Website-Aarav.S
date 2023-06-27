@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="style.css"/>
 </head>
   
-<body>
+<body style="background-color: orange;">
 	<style>
 	</style>
 	<script>
@@ -28,7 +28,6 @@
 		  ("https://tempehs.github.io/2023IST-Website-Aarav.Shrestha/");
   }
 	</script>
-  
   
 <!-- BANNER STARTS HERE -->
 	<div class="container-fit">
@@ -61,10 +60,19 @@
 		</nav-->
 		<nav class="navbar navbar-expand-lg sticky-top bg-dark">
 			<div class="container-fluid">
-			  <button style="margin-left: auto;margin-right: auto;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			  <!--button style="" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<img style="width:100%; height:50px;" src="images/panda logo no text.png" >
+			  </button-->
+			  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
 				<img style="width:100%; height:50px;" src="images/panda logo no text.png" >
 			  </button>
-			  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			  <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+				<div class="offcanvas-header">
+				  <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">Offcanvas</h5>
+				  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+
+			  <div class="offcanvas-body" >
 				<div class="navbar-nav">
 				  <a class="nav-link active text-light" aria-current="page" href="https://tempehs.github.io/2023IST-Website-Aarav.Shrestha/">Home</a>
 				  <a class="nav-link text-light" href="#">Features</a>
@@ -106,10 +114,12 @@
 				<div class="col-6 d-sm-none d-md-block" style="margin-left: auto; margin-right: auto;">
 					<div class="card " style="min-width: 12rem; object-fit: contain; margin-top: 1rem;">
 						<img src="images/share_smilepanda.png" class="card-img-top" />
-							<div class="card-body">
-								<p class="card-text">Please feel free to share this cause!</p>
+							<div class="card-body bg-dark">
+								<p class="card-text text-light">Please feel free to share this cause!</p>
+							<div ckass="container-fit" style="text-align: center;">
 								<button onclick="copyLink()">Copy Link!</button>
 							</div>
+						</div>
 					</div>
 				</div>
 			<!-- SHARE CARD ENDS HERE -->
@@ -117,10 +127,12 @@
 				<div class="col-6 d-sm-none d-md-block" style="margin-left:auto; margin-right: auto;">
 					<div class="card" style="min-width: 12rem; object-fit: contain; margin-top: 1rem;">
 						<img src="images/donate_beggingpanda.png" class="card-img-top"/>
-							<div class="card-body">		
-								<p class="card-text">Please support this cause!</p>
+							<div class="card-body bg-dark">		
+								<p class="card-text text-light">Please support this cause!</p>
+								<div class="container-fit" style="text-align: center;">
 								<button onclick="myFunction()">Donate!</button>
 							</div>
+						</div>
 					</div>
 				</div>
 			<!-- DONATE CARD ENDS HERE -->
