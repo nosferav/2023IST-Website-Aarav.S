@@ -21,3 +21,9 @@
             </div>
 
             style="height: 30vw; width: 38vw; margin-left: 10%; border: 5px solid white"
+
+            <a class="nav-link text-light" href="https://tempehs.github.io/2023IST-Website-Aarav.Shrestha/">Home</a>
+            <a class="nav-link text-light"  href="https://tempehs.github.io/2023IST-Website-Aarav.Shrestha/donatepage.html">Donate</a>
+            <a class="nav-link text-light" href="https://tempehs.github.io/2023IST-Website-Aarav.Shrestha/diet.html">Diet</a>
+            <a class="nav-link text-light" href="https://tempehs.github.io/2023IST-Website-Aarav.Shrestha/habitat.html">Habitat</a>
+            <a class="nav-link text-light" href="https://tempehs.github.io/2023IST-Website-Aarav.Shrestha/behaviour.html">Behaviour</a>
