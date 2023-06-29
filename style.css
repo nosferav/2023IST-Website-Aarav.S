@@ -8,6 +8,7 @@ card {
 img {
 	width: 100% ;
 	height: fit-content;
+	position: auto;
 }
 div.sticky {
 	position: -webkit-sticky;
@@ -17,14 +18,12 @@ div.sticky {
 div.sharecard {
 	margin-left: auto; 
 	margin-right: auto; 
-	position: sticky; 
-	top: 70px;
+
 }
 div.donatecard {
 	margin-left:auto; 
 	margin-right: auto;
-	position: sticky; 
-	top: 360px;
+
 }
 .bodyimg {
 	margin-top:0cm; 
